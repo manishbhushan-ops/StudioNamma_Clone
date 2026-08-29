@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+    font-family: mono;
+    src: url(./GTPressuraMono.ttf);
+}
+@font-face {
+    font-family: mixbold;
+    src: url(./SairaExtraCondensed-Bold.ttf);
+}
+.pointer{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: blue;
+    position: fixed;
+    z-index: 999999;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+}
+header{
+    height: 10vh;
+    width: 100%;
+    background: #E4E4E4;
+    display: flex;
+    padding: 0px 30px;
+    font-family: mono;
+    position: fixed;
+    z-index: 99;
+
+}
+header p{
+  text-transform: uppercase;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    
+}
+.left p{
+    font-weight: 400;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.hero h1{
+    font-size: 160px;
+    font-family: mixbold;
+    line-height: 180px;
+    font-size: 210px;
+    text-transform: uppercase;
+}
+.cardfollower{
+    height: 300px;
+    width: 250px;
+    background-color: pink;
+   position: absolute;
+    z-index: 999;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cardfollower video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-container video{
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+
+
+}
+
+.creative-studio{
+    height: 100vh;
+    width: 100%;
+    background-color: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    font-family: mono;
+}
+.creative-studio p{
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+.creative-studio h1{
+    font-family: mixbold;
+    font-size: 100px;
+    line-height: 90px;
+}
+.detail{
+    text-decoration: underline;
+}
+.playground{
+    text-decoration: underline;
+}
+.img1 {
+    height: 210px;
+    object-fit: cover;
+    top: 262%;
+    left: 60%;
+    opacity: 0;
+    
+
+    
+    position: absolute;
+}
+.img2{
+    height: 210px;
+    object-fit: cover;
+    top: 230%;
+    left: 34%;
+    opacity: 0;
+    
+    position: absolute;
+}
+.menu{
+    height: 100%;
+    width: 200%;
+    background-color: red;
+    position: fixed;
+    z-index: 9999;
+    top: -100%;
+    right: 0%;
+    left: 0%;
+}
+.texts{
+    height: 100vh;
+    width: 100%;
+    background-color: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: mono;
+    position: absolute;
+    opacity: 0;
+     top: -100%;
+     z-index: 9999;
+    
+    
+}
+.texts h1{
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    z-index: 99999;
+    position: absolute;
+    
+    
+    
+    
+}
+
+.gallery{
+    width: 100%;
+    background-color: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+}
+.gallery h1{
+    font-size: 200px;
+    font-family: mixbold;
+}
+.gallery-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 700px;
+    width: 600px;
+    background-color: red;
+    border-radius: 10px;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.box:hover{
+    filter: blur(2px);
+}
+.box video{
+   height: 40%;
+   width: 60%;
+   object-fit: cover;
+   border-radius: 5px;
+   opacity: 0;
+   transition: linear 0.2s;
+   overflow: hidden;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 999999;
+
+}
+.box:hover video{
+    opacity: 1;
+
+
+}
+.box1 {
+    background-image: url("https://cdn.prod.website-files.com/67aca0c732855fc2a1f2c4fc/68bb0be00336912e360b324f_main%20case%20cover%20matera%20(1)-p-500.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box2 {
+    background-image: url("https://cdn.prod.website-files.com/67aca0c732855fc2a1f2c4fc/68bae5b9f22246585fe911d0_chance-cover-desktop-p-2000.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box3 {
+    background-image: url("https://cdn.prod.website-files.com/67aca0c732855fc2a1f2c4fc/68beb68ead192a24f9ad4372_silvr%20case%20cover%20(1)-p-2000.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box4 {
+    background-image: url("https://cdn.prod.website-files.com/67aca0c732855fc2a1f2c4fc/68bb1c497ad001257f2e727f_intramuros-cover-case-home%20(1)-p-2000.webp");
+    background-size: cover;
+    background-position: center;
+}
+.rectangle{
+    height: 50px;
+    width: 150px;
+    background-color: rgba(66, 93, 244, 0.5);
+    border-radius: 10px;
+    font-family: mono;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 50px;
+    position: fixed;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 999999;
+    text-transform: uppercase;
+    transform: rotate(-10deg);
+
+}
+.services{
+    height: 165vh;
+    width: 100%;
+    background-color: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: mixbold;
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 120px;
+    position: relative;
+    
+}
+
+
+
